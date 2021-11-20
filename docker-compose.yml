@@ -28,12 +28,12 @@ services:
     networks:
       - gitlabnet
     ports:
-    - "80:80"
-    - "31022:22"
+      - "80:80"
+      - "31022:22"
     env_file: ./env/gitlab.env
     volumes:
-    - ./data/gitlab:/home/git/data
+      - ./data/gitlab:/home/git/data
     restart: unless-stopped
     depends_on:
-    - redis
-    - postgresql
+      - redis
+      - postgresql
