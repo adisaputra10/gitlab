@@ -6,7 +6,7 @@ networks:
 
 services:
   redis:
-    image: dimaskiddo/alpine:redis-6.2
+    image: dimaskiddo/alpine:keydb-6.2
     networks:
       - gitlabnet
     env_file: ./env/redis.env 
